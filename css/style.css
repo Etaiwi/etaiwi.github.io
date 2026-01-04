@@ -33,6 +33,13 @@ p {
   border-left: 3px solid #2563eb;
 }
 
+.project-links {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
 a {
   color: #2563eb;
   text-decoration: none;
