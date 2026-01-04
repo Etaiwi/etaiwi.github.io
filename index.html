@@ -25,6 +25,7 @@
     <a class="btn" href="https://github.com/Etaiwi">GitHub</a>
     <a class="btn" href="https://linkedin.com/in/etai-wigman">LinkedIn</a>
     <a class="btn" href="mailto:wigman.etai@gmail.com">Email</a>
+    <button class="btn copy-btn" id="copyEmailBtn" type="button">Copy Email</button>
   </div>
 </header>
 
@@ -86,6 +87,30 @@
 <footer>
   <p>© 2026 Etai Wigman</p>
 </footer>
-  
+
+<script>
+  const btn = document.getElementById("copyEmailBtn");
+  if (btn) {
+    btn.addEventListener("click", async () => {
+      const email = "wigman.etai@gmail.com";
+      try {
+        await navigator.clipboard.writeText(email);
+        btn.textContent = "Copied ✓";
+        setTimeout(() => (btn.textContent = "Copy Email"), 1500);
+      } catch (e) {
+        // Fallback for older browsers
+        const tmp = document.createElement("textarea");
+        tmp.value = email;
+        document.body.appendChild(tmp);
+        tmp.select();
+        document.execCommand("copy");
+        document.body.removeChild(tmp);
+        btn.textContent = "Copied ✓";
+        setTimeout(() => (btn.textContent = "Copy Email"), 1500);
+      }
+    });
+  }
+</script>
+
 </body>
 </html>
