@@ -1,55 +1,103 @@
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    max-width: 900px;
-    margin: auto;
-    padding: 60px 24px;
-    line-height: 1.65;
-    color: #1f2937;
-    background: #ffffff;
-  }
-  
-  h1 {
-    font-size: 2.6rem;
-    margin-bottom: 0.2em;
-  }
-  
-  h2 {
-    margin-top: 3rem;
-    border-bottom: 2px solid #e5e7eb;
-    padding-bottom: 0.4rem;
-  }
-  
-  h3 {
-    margin-bottom: 0.4rem;
-  }
-  
-  p {
-    max-width: 720px;
-  }
-  
-  .project {
-    margin-bottom: 2rem;
-    padding-left: 1rem;
-    border-left: 3px solid #2563eb;
-  }
-  
-  a {
-    color: #2563eb;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  ul {
-    padding-left: 1.2rem;
-  }
-  
-  footer {
-    margin-top: 4rem;
-    font-size: 0.9rem;
-    color: #6b7280;
-  }
-  
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 24px;
+  line-height: 1.65;
+  color: #1f2937;
+  background: #ffffff;
+}
+
+h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  margin-top: 3rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.4rem;
+}
+
+h3 {
+  margin-bottom: 0.4rem;
+}
+
+p {
+  max-width: 720px;
+}
+
+.project {
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  border-left: 3px solid #2563eb;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+footer {
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 26px;
+}
+
+.header-left {
+  max-width: 720px;
+}
+
+.header-left p {
+  margin-top: 8px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.btn:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+}  
