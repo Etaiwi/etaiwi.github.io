@@ -33,6 +33,10 @@ p {
   border-left: 3px solid #2563eb;
 }
 
+.project p {
+  margin-bottom: 0.6rem;
+}
+
 .project-links {
   display: flex;
   gap: 14px;
